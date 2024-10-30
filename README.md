@@ -104,7 +104,9 @@ Please set ```--func_type quadratic```. When $\frac{\Vert{\theta_\bot}\Vert}{\Ve
 
 (b) $f_2(x)= 5 - 0.5 \lVert x - b \rVert.$  (```--opt_rounds 50```)
 
-Please set ```--func_type negnormplus```. When $b \sim \mathcal{N}(4 \cdot \mathbf{1}_{D}, 9 \cdot I_D)$, specify ```--interval 1```. When $b =4 \cdot \mathbf{1}_{D}$, add ```--use_b_1``` and set ```--interval 1```. 
+Please set ```--func_type negnormplus```. 
+When $b \sim \mathcal{N}( 4\cdot\mathbf{1}, 9 \cdot I_{D})$, specify ```--interval 1```. 
+When $b =4 \cdot \mathbf{1}_{D}$, add ```--use_b_1``` and set ```--interval 1```. 
 
 
 B. **Nonlinear**: Unit Ball
