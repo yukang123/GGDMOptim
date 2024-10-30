@@ -1,0 +1,17 @@
+pip 
+### for simulation
+torch
+numpy
+tqdm
+scipy
+einops
+tensorboard
+matplotlib
+# ### for image generation    
+torchvision
+transformers
+accelerate
+diffusers
+wandb
+Pillow
+# git+https://github.com/openai/CLIP.git
