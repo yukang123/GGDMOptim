@@ -52,7 +52,7 @@ Experiments on two different data distributions.
 
 Please check the ```main.py``` file to understand the meanings of different parameters. Please use **tensorboard** to visualize the results based on log files saved in ```logs``` folder.
 
-**A. Linear Latent Space:** 
+### **A. Linear Latent Space:**
 > (Optional) Pretraining Unconditional Diffusion Model: 
 
 ```
@@ -62,7 +62,9 @@ You can also generate new training data by setting ```--pretrain_data``` as None
 
 > Comparisons between two different guidances $G$ and $G_{loss}$ (Figure 4 of the paper)
 
-Reward Function: $$ f(x) = 10 - (\theta^\top x - 3)^2, \frac{\Vert{\theta_\bot}\Vert}{\Vert{\theta_\Vert}\Vert}=9.$$ You may add ```--seed xxxx``` in the below commands (try seeds in $[1234, 2345,3456,4567,5678]$)
+Reward Function: $$f_1(x) = 10 - (\theta^\top x - 3)^2, \frac{\Vert{\theta_\bot}\Vert}{\Vert{\theta_\Vert}\Vert}=9.$$ 
+
+You may add ```--seed xxxx``` in the below commands (try seeds in $[1234, 2345,3456,4567,5678]$)
 
 **Algorithm 1**: Gradient-Guided Diffusion for Generative Optimization
 
@@ -109,7 +111,7 @@ When $b \sim \mathcal{N}( 4\cdot\mathbf{1}, 9 \cdot I_{D})$, specify ```--interv
 When $b =4 \cdot \mathbf{1}_{D}$, add ```--use_b_1``` and set ```--interval 1```. 
 
 
-B. **Nonlinear**: Unit Ball
+### B. **Nonlinear**: Unit Ball
 
 Please set ```--x_type unit_ball```.
 
