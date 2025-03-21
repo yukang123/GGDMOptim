@@ -150,6 +150,8 @@ $$ -->
 ## :mag_right: Image Generation
 Codes are adapted from [RCGDM](https://github.com/Kaffaljidhmah2/RCGDM.git). 
 
+**Prerequisites**: Please download ```reward_model.pth``` (reward model) from this [huggingface](https://huggingface.co/PDMR/GGDMOptim/tree/main) repo and put them into the ```image_generation``` folder. 
+
 ```
 - cd image_generation
 - python main.py --target 10 --guidance 100 --opt_steps 8 --repeat_epoch 4 --seed 5 --bs 5 --prompt 'fox' 
